@@ -1,0 +1,26 @@
+﻿@using ShopApp.MVC.WebUI.Models;
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">ShopApp!</h1>
+        <p class="lead">Bu internet programlama projesidir.</p>
+        <hr class="my-4">
+        <p>Proje sahipleri Erdinç,Safa ,Necati,Zafer ve Hilmi'dir .</p>
+        <p class="lead">
+            <a class="btn btn-danger btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+</div>
+
+<div class="container pb-5">
+
+    @Html.Partial("_ProductList", Model)
+</div>
+
+
